@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.app{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header h1{
+    margin: 46px 0px 32px 0px;
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: 0.25rem;
+    font-weight: 900;
+    color: grey;
+}
+
+.header p{
+    text-align: center;
+    font-size: 19px;
+    color: grey;
+    
+}
+
+.pads{
+    background: lightblue;
+    width: 100vw;
+    display: flex;
+    
+}
+
+.pads > div{
+    height: 150px;
+    width: 100px;
+    flex: 1;
+}
+
+.pad-1{
+    background-color: rgb(119, 211, 26);
+}
+.pad-2{
+    background-color: rgb(101, 123, 172);
+}
+.pad-3{
+    background-color:  rgb(190, 109, 32);
+}
+.pad-4{
+    background-color: rgb(139, 67, 211);
+}
+.pad-5{
+    background-color: rgb(167, 51, 147);
+}
+.pad-6{
+    background-color: rgb(255, 0, 47);
+}
+
+.visual > div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
+
+@keyframes jump{
+    0%{
+        left: 20%;
+        bottom: 0px;
+    }
+    50%{
+        top: 50%;
+        left: 2%;
+    }
+    100%{
+        left: 80%;
+        bottom: 0%;
+    }
+    200%{
+        right:60%;
+        top:10%;
+    }
+}
+
+.pad-1:hover{
+    border: 3px solid black;
+}
+.pad-2:hover{
+    border: 3px solid black;
+}
+.pad-3:hover{
+    border: 3px solid black;
+}
+.pad-4:hover{
+    border: 3px solid black;
+}
+.pad-5:hover{
+    border: 3px solid black;
+}
+.pad-6:hover{
+    border: 3px solid black;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+section
+{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 50vh;
+background: #ffffff;
+animation: animateBg 10s  linear infinite;
+
+}
+
+@keyframes animateBg
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+        
+    }
+}
+
+section .loader
+{
+    position: relative;
+    width: 120px;
+    height: 120px;
+
+}
+
+section .loader span 
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg *var(--i)));
+}
+
+section .loader span::before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00ff0a;
+    
+    box-shadow: 0 0 10px #00ff0a,
+                0 0 20px #00ff0a,
+                0 0 40px #00ff0a,
+                0 0 60px #00ff0a,
+                0 0 80px #00ff0a,
+                0 0 90px #00ff0a;
+    animation: animate 2s linear infinite;
+    animation-delay:calc(0.1s * var(--i)) ;
+    
+}
+
+@keyframes  animate
+{
+0%
+    {
+        transform: scale(1);
+    }
+
+80%,100%
+    {
+        transform: scale(0);
+    }
+
+}

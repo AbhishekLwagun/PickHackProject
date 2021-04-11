@@ -1,0 +1,147 @@
+/* write css here*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    Background-color: #000;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+#text {
+    /* border: 1px solid blue; */
+    /* width: 37%; */
+    height: 300px;
+    display: grid;
+    align-items: center;
+    margin-left: 8rem;
+    margin-top: 9.5rem;
+}
+
+#info {
+    color: #fff;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: monospace;
+    font-style: light;
+    z-index: 1;
+}
+
+img {
+    width: 40rem;
+    height: 30rem;;
+    /* border: 1px solid rgb(55, 204, 6); */
+    box-sizing: border-box;
+    margin: 10rem 10px 0 10rem;
+    z-index: 0;
+}
+
+#sidebar {
+    width: 5rem;
+    height: 100vh;
+    Background-color: rgb(0, 0, 0);
+    display: grid;
+    align-items: center;
+    padding: 1.5rem;
+    /* border: 1px solid rgb(223, 11, 142); */
+}
+
+#bar li {
+    font-size: 2rem;
+    list-style: none;
+    margin-top: -7rem;
+    color: #fff;
+}
+
+#bar a {
+    color: #fff;
+}
+
+#icon li {
+    font-size: 1.3rem;
+    list-style: none;
+    margin-top: 0rem;
+    margin-top: 0.8rem;
+}
+
+#icon a {
+    color: rgb(252, 252, 252);
+}
+
+#aboutme {
+    color: white;
+    width: 200px;
+    height: 35px;
+    background: black;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-top: -1rem;
+    /* // margin-left: 38.1rem; */
+}
+
+#aboutme:focus {
+    outline: none;
+}
+
+#aboutme:hover {
+    width: 250px;
+    background: rgb(0, 154, 225);
+    transform: scale(1.1);
+    transition: all 1s linear;
+}
+
+#section2 {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 250px;
+    height: 300px;
+    background: white;
+    border-radius: 30px;
+    margin-top: 9.5rem;
+}
+
+.title {
+    font-family: monospace;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 6.3rem;
+    margin-left: 2rem;
+}
+
+.title2 {
+    margin-top: 3rem;
+}
+
+.title3 {
+    margin-top: 3rem;
+}
+
+#open {
+    color: white;
+    width: 150px;
+    height: 35px;
+    background: black;
+    margin-left: 2rem;
+    margin-top: 0.9rem;
+    border-radius: .8rem;
+    border: none;
+    cursor: pointer;
+}
+
+#open:focus {
+    outline: none;
+}
